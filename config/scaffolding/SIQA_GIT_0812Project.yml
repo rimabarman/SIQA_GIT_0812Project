@@ -29,10 +29,17 @@ packages:
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: rimabarman
   gitBranch: main
+- name: TPP_services_in_FCS
+  gitServerName: rimaSCName
+  gitUrl: https://github.com/Karthik-V-IBM-10
+  gitUsername: rimabarman
+  gitBranch: main
 services:
 - serviceName: project.siqa_git_0812.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:MyConnAlias
   packages:
   - name: SIQA_GIT_0812Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -51,6 +58,8 @@ services:
 - serviceName: project.siqa_git_0812.integrations:AlertsCRTandERT
   packages:
   - name: SIQA_GIT_0812Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -74,6 +83,8 @@ services:
   packages:
   - name: SIQA_GIT_0812Project
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -92,6 +103,8 @@ services:
   packages:
   - name: SIQA_GIT_0812Project
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -109,6 +122,8 @@ services:
 - serviceName: project.siqa_git_0812.integrations:deepclonetest
   packages:
   - name: SIQA_GIT_0812Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
