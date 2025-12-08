@@ -8,17 +8,19 @@
   <null name="startup_services"/>
   <null name="shutdown_services"/>
   <null name="replication_services"/>
-  <null name="requires"/>
+  <record name="requires" javaclass="com.wm.util.Values">
+    <value name="WmSalesforceRESTProvider">10.7.0.0.197</value>
+  </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">3</value>
+  <value name="build">4</value>
   <null name="description"/>
   <value name="created_date">08-12-2025 12:09:13 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2025-12-08T12:18:39.807366417Z</value>
+  <value name="lastUpdated">2025-12-08T12:18:45.378095262Z</value>
   <value name="wmProjectId">fl0ff38ddfbb78b63f47635e</value>
   <value name="creator">Rima Barman</value>
 </Values>
