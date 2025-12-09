@@ -30,6 +30,7 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: rimaSCName
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: rimabarman
@@ -76,6 +77,78 @@ services:
   - name: SIQACloudStreamsTests
     version: "1.0"
 - serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2105
+- serviceName: project.siqa_git_0812.integrations:Call_refData
+  packages:
+  - name: SIQA_GIT_0812Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.197
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: project.siqa_git_0812.referencedata:refData
+  packages:
+  - name: SIQA_GIT_0812Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.197
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: project.siqa_git_0812.integrations:Copy_deepclonetest
+  packages:
+  - name: SIQA_GIT_0812Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.71
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.197
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: pub.string:stringToBytes
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2105
+- serviceName: pub.utils:deepClone
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2105
+- serviceName: pub.string:bytesToString
   packages:
   - name: WmPublic
     version: 11.1.0.0.2105
@@ -139,18 +212,6 @@ services:
     version: 10.7.0.0.197
   - name: SIQACloudStreamsTests
     version: "1.0"
-- serviceName: pub.string:stringToBytes
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2105
-- serviceName: pub.utils:deepClone
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2105
-- serviceName: pub.string:bytesToString
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2105
 configurationVariables:
   ? cloudstreamsconnection.project..siqa_git_0812..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConnAlias.cn.hostnameVerifier
   : org.apache.http.conn.ssl.DefaultHostnameVerifier
